@@ -4,7 +4,6 @@ public class DNA{
     public static void main (String[] args){
 
         Scanner userInput = new Scanner(System.in);
-        
         System.out.println("Please enter your DNA sequence!");
         String userString = (userInput.nextLine()).toUpperCase();
         String targettedString = "GTC";
@@ -24,4 +23,3 @@ public class DNA{
         return (str.length() - str.replace(target, "").length())/target.length();
     }
 }
-
